@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--By Bharanidharan-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise-1</title>
+</head>
+<body>
+    <h1>Question 1</h1>
+    <p>Design a  table</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">Header 1</th>
+                <th colspan="2">Header 2</th>
+                <th rowspan="2">Header 3</th>
+            </tr>
+            <tr>
+                <th>Subheader1</th>
+                <th>Subheader2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Cell 1 (Spans 2 rows)</td>
+                <td colspan="2">Cell 2 (Spans 2 columns)</td>
+                <td>Cell 3</td>
+            </tr>
+            <tr>
+                <td colspan="2">Cell 4  (Spans 2 columns)</td>
+                <td>Cell 5</td>
+            </tr>
+            <tr>
+                <td>Cell 6</td>
+                <td>Cell 7</td>
+                <td>Cell 8</td>
+                <td>Cell 9</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h1>Question 2</h1>
+    <p>Design a  table with cell spacing and padding</p>
+    <table border="5" cellspacing="15" cellPadding="10">
+        <thead>
+            <tr>
+                <th rowspan="2">Header 1</th>
+                <th colspan="2">Header 2</th>
+                <th rowspan="2">Header 3</th>
+            </tr>
+            <tr>
+                <th>Subheader1</th>
+                <th>Subheader2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Cell 1 (Spans 2 rows)</td>
+                <td colspan="2">Cell 2 (Spans 2 columns)</td>
+                <td>Cell 3</td>
+            </tr>
+            <tr>
+                <td colspan="2" >Cell 4  (Spans 2 columns)</td>
+                <td>Cell 5</td>
+            </tr>
+            <tr>
+                <td>Cell 6</td>
+                <td>Cell 7</td>
+                <td>Cell 8</td>
+                <td>Cell 9</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Employee&nbsp;Registration</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+                <label for="FirstName">First Name<span style="color: rgb(255, 0, 0);">*</span></label><br>
+                <input type="text" name="FirstName" id="FirstName" placeholder="Enter first name" required>
+            </p>
+            <p> 
+                <label for="LastName">Last Name<span style="color: rgb(255, 0, 0);">*</span></label><br>
+                <input type="text" name="LasttName" id="LastName" placeholder="Enter last name" required>
+            </p>
+            <p>
+                <label for="Email">Email<span style="color: rgb(255, 0, 0);">*</span></label><br>
+                <input type="text" name="Email" id="Email" placeholder="Enter email" required><br>
+                <small style="color: rgb(121, 121, 121);">Example:Jhon.doc@ecample.com</small>
+            </p>
+            <p>
+                <label for="PhoneNumber">Phone Number<span style="color: rgb(255, 0, 0);">*</span></label><br>
+                <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="Enter phone number" required>
+            </p>
+            <div>
+                <label for="gender">Selcet gender<span style="color: rgb(255, 0, 0);">*</span></label><br>
+                <input type="radio" name="male" id="male">
+                <label for="male">Male</label>
+
+                <input type="radio" name="female" id="female">
+                <label for="female">Female</label>
+
+                <input type="radio" name="other" id="other">
+                <label for="other">Other</label>
+            </div>
+            <br>
+            <div>
+                <label for="dob">Date of Birth<span style="color: rgb(255, 0, 0);">*</span></label><br>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <br>
+            <div>
+                <label for="maritalStatus">Marital status<span style="color: rgb(255, 0, 0);">*</span></label><br>
+                <input type="radio" name="married" id="married">
+                <label for="married">Married</label>
+
+                <input type="radio" name="single" id="single">
+                <label for="single">Single</label>
+            </div>
+            <br>
+            <label for="spouse">Spouse Name (if applicable)</label><br>
+            <input type="text" name="spouse" id="spouse" placeholder="Enter spouse Name">
+        </fieldset>
+        <fieldset>
+            <legend>Employment Details</legend>
+            <label for="department">Department<span style="color: rgb(255, 0, 0);">*</span></label><br>
+            <input type="text" name="department" id="department" list="department-list" placeholder="Select Department" required>
+                <datalist id="department-list">
+                    <option value="HR">HR</option>
+                    <option value="IT">IT</option>
+                    <option value="Finance">Finance</option>         
+                    <option value="Marketing">Marketing</option>
+                </datalist>
+            <br>
+            <label for="experience">Years of Experience</label><br>
+            <input type="number" name="experience" id="experience" placeholder="Enter experience in years" min="0"><br>
+            
+            <label for="skills">Skills</label><br>
+            <input type="checkbox" name="html" id="html" value="html"> 
+            <label for="html">HTML</label>
+            <input type="checkbox" name="css" id="html" value="html"> 
+            <label for="html">CSS</label>
+            <input type="checkbox" name="javascript" id="javascript" value="javascript"> 
+            <label for="html">JavaScripte</label>
+            <input type="checkbox" name="sql" id="sql" value="sql"> 
+            <label for="html">SQL</label><br>
+
+            <label for="certification">Certification</label><br>
+            <textarea style="resize: none;" name="certification" id="certification" cols="30" rows="10" placeholder="Enter the list of certification"></textarea><br>
+
+            <label for="profilePicture">Profile Picture</label><br>
+            <input type="file" name="file" id="file" accept="image/*"><br>
+            <small style="color: rgb(121, 121, 121);">Allowed formats: JPG, PNG</small>
+
+        </fieldset>
+        <fieldset>
+            <legend>Emergency Contact</legend>
+            <label for="contactName">Contact Name<span style="color: rgb(255, 0, 0);">*</span></label><br>
+            <input type="text" name="contactName" id="contactName" placeholder="Enter contact Name" readonly><br>
+
+            <label for="contactPhone">Contact Phone<span style="color: rgb(255, 0, 0);">*</span></label><br>
+            <input type="tel" name="contactPhone" id="contactPhone" placeholder="Enter phone Number" readonly><br>
+
+            <label for="contactRelation">Cotact Relation<span style="color: rgb(255, 0, 0);">*</span></label><br>
+            <input type="text" name="contactRelation" id="contactRelation" placeholder="Enter Relation (e.g., Parent, Spouse)" readonly><br>
+        </fieldset>
+        <fieldset>
+            <legend>Address Details</legend>
+            <label for="address">Address<span style="color: rgb(255, 0, 0);">*</span></label><br>
+            <textarea style="resize: none;" name="address" id="address" cols="30" rows="10" placeholder="Enter address"></textarea><br>
+        </fieldset>
+        <fieldset>
+            <legend>Login Details</legend>
+            <label for="userName">User Name<span style="color: rgb(255, 0, 0);">*</span></label><br>
+            <input type="text" name="userName" id="userName" placeholder="Enter user name" required><br>
+            
+            <label for="Password">Password<span style="color: rgb(255, 0, 0);">*</span></label><br>
+            <input type="password" name="password" id="password" placeholder="Enter Password" required><br>
+            
+            <label for="confirmPassword">Confirm Password<span style="color: rgb(255, 0, 0);">*</span></label><br>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password"required><br>
+        </fieldset>
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
