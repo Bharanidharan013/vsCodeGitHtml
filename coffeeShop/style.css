@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    background-color: linen;
+    color: brown;
+}
+
+.sideBar {
+    background-color: blanchedalmond;
+    height: 100%;
+    width: 100px;
+    color: brown;
+    text-align: center;
+    padding-top: 20px;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    left: 0;
+    top: 52.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideBar a {
+    color: brown;
+    padding: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.sideBar a:hover {
+    background-color: #e2c4a6;
+}
+
+nav {
+    background-color: brown;
+    padding: 15px;
+    width: 100%; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+nav a {
+    color: blanchedalmond;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding-left: 0px;
+    padding-right: 20px;
+    width: 100%;
+    text-align: center;
+    border-color: brown;
+}
+
+section {
+    padding: 20px;
+}
+
+.about,.contact{
+    display: flex;
+    flex-direction: column;
+    background-color:linen;
+    text-align: center;
+}
+
+.about{
+    margin: -3%;
+}
+
+.order{
+    text-align: left;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 45%;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+}

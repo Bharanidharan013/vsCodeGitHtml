@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+    <div class="content">
+        <nav>
+            <a href="home.html" >Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="form.html">Order</a>
+            <a href="home.html#about">About</a>
+            <a href="home.html#contact">Contact</a>
+        </nav>
+    </div>
+    
+    <div class="sideBar">
+        <a href="home.html" >Home</a><br>
+        <a href="menu.html">Menu</a><br>
+        <a href="form.html">Order</a><br>
+        <a href="home.html#about">About</a><br>
+        <a href="home.html#contact">Contact</a><br>
+    </div>
+    <section id="order" class="order" style="padding-left: 10%;" >
+        <form><br>
+            <h1>Place your Order</h1>
+            <fieldset style="border-color:crimson;">
+                <legend>Order</legend>
+                <div id="order" class="order">
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+
+                    <label for="PhoneNumber">Phone Number</label><br>
+                    <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="Enter phone number" required><br>
+
+                    <label for="item">Order Item</label><br>
+                    <input type="text" name="item" id="item" list="item-list" placeholder="Select Item" required>
+                    <datalist id="item-list">
+                        <option value="Coffee">Coffee</option>
+                        <option value="Espresso">Espresso</option>
+                        <option value="Latte">Latte</option>
+                        <option value="Hot Choclate">Hot Choclate</option>
+                        <option value="Black Coffee">Black Coffee</option>
+                        <option value="Tea">Tea</option>
+                    </datalist>
+                    <br>
+
+                    <label for="quantity">Quantity</label><br>
+                    <input type="number" name="quantity" id="quantity" placeholder="Enter Quantity" style="color: brown;" min="1"><br>
+
+                    <label for="paymentMethod">Payment Method</label><br>
+                    <input type="radio" name="creditCard" id="creditCard">
+                    <label for="creditCard">Credit Card</label>
+
+                    <input type="radio" name="debitCard" id="debitCard">
+                    <label for="debitCard">Debit Card</label>
+
+                    <input type="radio" name="netBanking" id="netBanking">
+                    <label for="netBanking">Net Banking</label>
+                    <br>
+
+                    <label for="address">Address</label><br>
+                    <textarea style="resize: none;" name="address" id="address" cols="30" rows="10" placeholder="Enter address"></textarea><br>
+                </div>
+                <input type="submit" value="Order" style="background-color:rgb(72, 86, 241);color: #f6f5f5;border-color:rgb(66, 57, 247);">
+                <input type="reset" value="Clear" style="background-color:crimson;color: #f6f5f5;border-color:crimson;">
+
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
