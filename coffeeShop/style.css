@@ -18,7 +18,7 @@ body {
     z-index: 1;
     overflow: hidden;
     left: 0;
-    top: 52.5px;
+    top: 52.2px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,7 +73,6 @@ section {
 .about,.contact{
     display: flex;
     flex-direction: column;
-    background-color:linen;
     text-align: center;
 }
 
@@ -85,14 +84,14 @@ section {
     text-align: left;
 }
 
-.menu-row {
+.menuRow {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
-.image-container {
+.image {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,6 +99,77 @@ section {
     text-align: center;
 }
 
-.image-container img {
+.image img {
     max-width: 100%;
 }
+
+.login {
+    margin: 0;
+    height: 100vh;  
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    background-color: #f4f4f4; 
+    font-family: Arial, sans-serif;
+  }
+
+ 
+  #login {
+    display: inline-block; 
+    text-align: center;
+    padding: 20px;
+    width: fit-content;
+    background-color:linen;
+    border: 2px solid brown;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .logfield {
+    border: none;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .logfield legend {
+    font-weight: bold;
+    font-size: 20px;
+    color: brown;
+    padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  input[type="submit"],input[type="reset"] {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff3700;
+    color: white;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #ab2804;
+  }
+
+  .forgotPassword {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #de4111;
+    text-decoration: none;
+  }
+
+  .forgotPassword:hover {
+    text-decoration: underline;
+  }

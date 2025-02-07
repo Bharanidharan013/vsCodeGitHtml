@@ -1,0 +1,50 @@
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #d3d2d2;
+        margin: 0;
+        padding: 20px;
+    }
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+    legend {
+        font-size: medium;
+        font-weight: 800;
+        color: #7b7b7b;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    input[type="submit"], input[type="reset"] {
+        border: none;
+        padding: 10px 35px;
+        font-size: medium;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"] {
+        background: #05cc4a;
+        color: white;
+    }
+    input[type="reset"] {
+        background: #05cc4a;
+        color: white;
+    }
+    input[type="submit"]:hover {
+        background: #039a4c;
+    }
+    input[type="reset"]:hover {
+        background: #039a4c;
+    }
+    fieldset {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .error {
+        color: red;
+        display: none;
+    }

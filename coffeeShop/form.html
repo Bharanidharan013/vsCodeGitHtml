@@ -15,6 +15,7 @@
             <a href="form.html">Order</a>
             <a href="home.html#about">About</a>
             <a href="home.html#contact">Contact</a>
+            <a href="login.html">LogOut</a>
         </nav>
     </div>
     
@@ -32,10 +33,12 @@
                 <legend>Order</legend>
                 <div id="order" class="order">
                     <label for="name">Name</label><br>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    <br><br>
 
                     <label for="PhoneNumber">Phone Number</label><br>
-                    <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="Enter phone number" required><br>
+                    <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="Enter phone number" required>
+                    <br><br>
 
                     <label for="item">Order Item</label><br>
                     <input type="text" name="item" id="item" list="item-list" placeholder="Select Item" required>
@@ -47,10 +50,11 @@
                         <option value="Black Coffee">Black Coffee</option>
                         <option value="Tea">Tea</option>
                     </datalist>
-                    <br>
+                    <br><br>
 
                     <label for="quantity">Quantity</label><br>
-                    <input type="number" name="quantity" id="quantity" placeholder="Enter Quantity" style="color: brown;" min="1"><br>
+                    <input type="number" name="quantity" id="quantity" placeholder="Enter Quantity" style="color: brown;" min="1">
+                    <br><br>
 
                     <label for="paymentMethod">Payment Method</label><br>
                     <input type="radio" name="creditCard" id="creditCard">
@@ -61,13 +65,15 @@
 
                     <input type="radio" name="netBanking" id="netBanking">
                     <label for="netBanking">Net Banking</label>
-                    <br>
+                    <br><br>
 
                     <label for="address">Address</label><br>
                     <textarea style="resize: none;" name="address" id="address" cols="30" rows="10" placeholder="Enter address"></textarea><br>
                 </div>
-                <input type="submit" value="Order" style="background-color:rgb(72, 86, 241);color: #f6f5f5;border-color:rgb(66, 57, 247);">
-                <input type="reset" value="Clear" style="background-color:crimson;color: #f6f5f5;border-color:crimson;">
+                <div id="formSubmit">
+                    <input type="submit" value="Order" style="background-color:rgb(72, 86, 241);color: #f6f5f5;border-color:rgb(66, 57, 247);">
+                    <input type="reset" value="Clear" style="background-color:crimson;color: #f6f5f5;border-color:crimson;">
+                </div>
 
             </fieldset>
         </form>

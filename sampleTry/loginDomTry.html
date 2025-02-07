@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script>
+    function validatePhone(){
+      let Phone = document.getElementById("phoneNumber").value;
+      let mail = document.getElementById("mailId"),value;
+
+      let phoneRegex=/^\+91\d{10}$/;
+      let mailRegex=/^\[a-zA-Z0-9]+@[a-zA-Z0-9]+\[a-zA-Z]{2,}$/
+
+      if(!phoneRegex.test(Phone)){
+        alert("Enter a valid number")
+        return false;
+      }
+      else{
+        return true;
+      }
+
+      if(!mailRegex.test(mail)){
+        alert("Enter a valid email")
+        return false;
+      }
+      else{
+        return true;
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="login">
+    <form action="#" method="get" onsubmit="return validatePhone()">
+      <fieldset id="logfield">
+        <legend>Login</legend>
+        
+        <label for="firstName">First name</label>
+        <br>
+        <input type="text" id="firstName" name="firstName" required>
+        <br>
+        <label for="LastName">Last name</label><br>
+        <input type="text" id="LastName" name="LastName" required>
+        <br>
+        <label for="phoneNumber">Phone Number</label><br>
+        <input type="text" id="phoneNumber" name="phoneNumber" required>
+        <br>
+        <label for="mailId">E-mail</label><br>
+        <input type="mailId" id="mailId" name="mailId" required >
+        <br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" required >
+        <br>
+        <input type="submit" value="Login">
+        <br>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>

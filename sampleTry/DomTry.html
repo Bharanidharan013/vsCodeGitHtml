@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Try</title>
+</head>
+<body>
+    <p id="color">DOM</p>
+    <p>getElement By TagName</p>
+    <p id="dom">Demo</p>
+    <a href="https://www.youTube.com" id="yt">Link</a><br>
+    <button id="c">Try</button><br>
+    <label for="input">Enter the data:</label>
+    <input type="text" id="input" name="input" placeholder="Enter data">
+    <script>
+        let summa=document.getElementsByTagName("p");
+
+        let summa1=document.getElementById("color").style.color="red";
+        // documet.write(summa1);
+
+        document.getElementById("dom").innerHTML="Good morning";
+        var ped=document.getElementById("dom").textContent;
+
+        document.getElementById("dom").style.fontStyle = "italic";
+        document.getElementById("yt").setAttribute("href","https://www.reddit.com/");
+
+        function saySumma(){
+            alert("Summa");
+        }
+
+        function sayHello(){
+            alert("Hello");
+        }
+        document.getElementById("c").addEventListener("click",  function() { saySumma()});
+        document.getElementById("c").addEventListener("click",function() { sayHello()});
+
+        document.getElementById("input").onchange = function(){
+            document.getElementById("input").style.backgroundColor = document.getElementById("input").value;
+            document.getElementById("input").addEventListener("click",alert("color changer to "+document.getElementById("input").value));
+        }
+    </script>
+</body>
+</html>
